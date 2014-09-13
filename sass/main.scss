@@ -1,0 +1,11 @@
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "partials/mixins.scss",
+        "partials/variables.scss",
+        "partials/base.scss",
+        "partials/layout.scss",
+        "partials/syntax-highlighting.scss"
+
+;
+

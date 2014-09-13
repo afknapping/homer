@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  <!-- major posts -->
+  <ul class="posts">
+    <h2>Keypoints</h2>
+
+    {% for post in site.posts %}
+
+
+      {% if post.layout == "article" or post.layout == "picture" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+
+      {% endif%}
+
+    {% endfor %}
+  </ul>
+  <hr>
+
+<!-- minor posts -->
+  <ul class="posts">
+    <h2>Bits and pieces</h2>
+
+    {% for post in site.posts %}
+
+
+      {% if post.layout == "sketch" or post.layout == "link" or post.layout == "snapshot" or post.layout == "quote" or post.layout == "note" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {{ post.quote_author }}
+      </li>
+
+      {% endif%}
+
+    {% endfor %}
+  </ul>
+  <hr>

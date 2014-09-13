@@ -1,0 +1,37 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-element" noscript>
+  <template>
+    <span>Hello from <b>my-element</b>. This is my Shadow DOM.</span>
+     This element has a ready() method.
+    <span id="title">Not ready...</span>
+    This is <b>{{owner}}</b>'s name-tag element.
+  </template>
+
+    <ul class="posts">
+    <h2>Major posts</h2>
+
+    {% for post in site.posts %}
+
+
+      {% if post.layout == "article" or post.layout == "picture" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+
+      {% endif%}
+
+    {% endfor %}
+  </ul>
+
+ <script>
+    Polymer('my-element', {
+      owner: "Daniel",
+      ready: function() {
+        this.$.title.textContent = this.owner +
+                                " is ready!";
+      }
+    });
+  </script>
+</polymer-element>

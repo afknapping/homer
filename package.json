@@ -1,0 +1,24 @@
+{
+  "name": "acme-buffet",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filtercake/acme-buffet"
+  },
+  "author": "filtercake <fabian@superpursuitmo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filtercake/acme-buffet/issues"
+  },
+  "homepage": "https://github.com/filtercake/acme-buffet",
+  "devDependencies": {
+    "jade": "^1.6.0",
+    "gulp": "^3.8.7",
+    "gulp-jade": "^0.7.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-util": "^3.0.1"
+  }
+}

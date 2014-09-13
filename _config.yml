@@ -1,0 +1,19 @@
+# Site settings
+title: acme-default
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  jekyll because github pages. boilerplate including everything one could ever need. static data, blogposts, web components polyfill, sass, jade, gulp for local development, foreman to boot everything up, package.json, bower.json, lots of special post types. just delete what is not needed.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: filtercake
+github_username:  filtercake
+flickr_username:  filtercake
+permalink: title
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: _sass
+  sourcemap: true

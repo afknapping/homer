@@ -1,0 +1,60 @@
+#!/bin/bash
+
+echo 'hello world'
+
+
+while true
+do
+  # (1) prompt user, and read command line argument
+  read -p "layout (a_rticle, s_ketch, snapsho_t, q_uote, p_icture): " layout_key
+
+  case $layout_key in
+    [aA]* ) layout='article'
+            echo $layout
+            break;;
+    [sS]* ) layout='sketch'
+            echo $layout
+            break;;
+    [pP]* ) layout='picture'
+            echo $layout
+            break;;
+    [qQ]* ) layout='quote'
+            echo $layout
+            break;;
+    [tT]* ) layout='snapshot'
+            echo $layout
+            break;;
+        * )     echo "Dude.";;
+  esac
+
+
+  read -p "title: " title
+  echo $title
+  read -p "type (minor): " type
+  if [ -z $type ]
+    then
+    type='minor'
+    echo 'set to' $type
+  fi
+
+  echo 'title: ' $title
+  echo 'type: ' $type
+  echo 'date?'
+  echo 'layout: ' $layout
+
+
+  case $type in
+    [i]* ) echo $type
+  esac
+
+  # (2) handle the input we were given
+  # case $answer in
+  #  [yY]* ) /usr/bin/wget -O - -q -t 1 http://www.example.com/cron.php
+  #          echo "Okay, just ran the cron script."
+  #          break;;
+
+  #  [nN]* ) exit;;
+
+  #  * )     echo "Dude, just enter Y or N, please.";;
+  # esac
+done
