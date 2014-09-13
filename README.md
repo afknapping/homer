@@ -1,16 +1,10 @@
-    jekyll serve -w --baseurl ''
-
+    $ foreman start
 
 ## image link template
 
     ![]({{site.baseurl}}/content/images/2014/XXXXXXXXX)
 
 ----
-
-# CSSconf.github.io
-
-[![Stories in Ready](https://badge.waffle.io/cssunconf/cssconf.github.io.png?label=ready&title=Ready)](https://waffle.io/cssunconf/cssconf.github.io)
-CSSconf.github.io
 
 ## Adding content
 
@@ -27,12 +21,10 @@ See the [GitHub Pages](http://jekyllrb.com/docs/github-pages/) and [Data Files](
 
     $ npm install gulp --global
     $ npm install
+    $ bower install
     $ gem install bundler
     $ bundle install
 
-### Fire it up
-
-    $ foreman start
 
 (We would need to start gulp (to generate the stuffz) and jekyll (to generate the page) seperately but Foreman wraps that for us. See [Using a Procfile to streamline your local development](http://mattstauffer.co/blog/using-a-procfile-to-streamline-your-local-development) for more info.)
 
