@@ -1,8 +1,9 @@
+
 # The Homer
 
 ![](_the-homer-inline2.jpg)
 
-A Jekyll template with all the features – so you can opt out the ones you do not need.
+A Jekyll template with all the features and – so you can opt out the ones you do not need.
 
 ## Adding content
 
@@ -18,6 +19,7 @@ See the [GitHub Pages](http://jekyllrb.com/docs/github-pages/) and [Data Files](
 *Note:* Ruby version is set to 2.1.2. Please check the docs of your ruby version manager on how to install and use.
 
     $ npm install gulp --global && npm install
+    $ bower install
     $ gem install bundler && bundle install
 
 ### Fire it up
@@ -29,4 +31,3 @@ See the [GitHub Pages](http://jekyllrb.com/docs/github-pages/) and [Data Files](
 ## image link template
 
     ![]({{site.baseurl}}/content/images/2014/XXXXXXXXX)
-
