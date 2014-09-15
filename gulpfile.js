@@ -7,7 +7,7 @@ scripts: ['client/js/**/*.coffee', '!client/external/**/*.coffee'],
 
 sources = {
   jade_index: 'index.jade',
-  jade_layouts: '_layouts/*.jade',
+  jade_layouts: '_layouts-jade/*.jade',
   jade_includes: '_includes/*.jade',
   // coffee: "coffee/**/*.coffee",
   sass: "sass/**/*.{sass,scss}"
