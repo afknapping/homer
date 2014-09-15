@@ -23,18 +23,16 @@ destinations = {
   sass: "_site/sass/"
 };
 
-
+sass_config = {
+  sourcemap: true,
+  sourcemapPath: '/sass',
+  lineNumbers: true,
+  bundleExec: true
+};
 
 gulp.task('sass', function () {
     return gulp.src(sources.sass)
-        .pipe(sass(
-              {
-                sourcemap: true,
-                sourcemapPath: '/sass',
-                lineNumbers: true,
-                bundleExec: true
-              }
-              ))
+        .pipe(sass(sass_config))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest(destinations.css));
 });
