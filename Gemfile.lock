@@ -11,17 +11,11 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorator (0.1)
-    dotenv (0.11.1)
-      dotenv-deployment (~> 0.0.2)
-    dotenv-deployment (0.0.2)
     execjs (2.2.1)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
-    foreman (0.75.0)
-      dotenv (~> 0.11.1)
-      thor (~> 0.19.1)
     hitimes (1.2.2)
-    jekyll (2.3.0)
+    jekyll (2.4.0)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
       jekyll-coffeescript (~> 1.0)
@@ -63,8 +57,7 @@ GEM
     redcarpet (3.1.2)
     safe_yaml (1.0.3)
     sass (3.3.14)
-    thor (0.19.1)
-    timers (4.0.0)
+    timers (4.0.1)
       hitimes
     toml (0.1.1)
       parslet (~> 1.5.0)
@@ -74,6 +67,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  foreman
   jekyll
   sass (~> 3.3.10)

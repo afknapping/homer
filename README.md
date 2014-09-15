@@ -32,7 +32,7 @@ See the [GitHub Pages](http://jekyllrb.com/docs/github-pages/) and [Data Files](
 
 ### Fire it up
 
-    $ foreman start
+    $ nf start
 
-(We would need to start gulp (to generate the stuffz) and jekyll (to generate the page) seperately but Foreman wraps that for us. See [Using a Procfile to streamline your local development](http://mattstauffer.co/blog/using-a-procfile-to-streamline-your-local-development) for more info.)
+...which starts Gulp and Jekyll. See [Using a Procfile to streamline your local development](http://mattstauffer.co/blog/using-a-procfile-to-streamline-your-local-development) for more info.
 

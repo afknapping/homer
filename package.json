@@ -15,10 +15,11 @@
   },
   "homepage": "https://github.com/filtercake/acme-buffet",
   "devDependencies": {
-    "jade": "^1.6.0",
+    "foreman": "^0.4.2",
     "gulp": "^3.8.7",
     "gulp-jade": "^0.7.0",
     "gulp-ruby-sass": "^0.7.1",
-    "gulp-util": "^3.0.1"
+    "gulp-util": "^3.0.1",
+    "jade": "^1.6.0"
   }
 }
