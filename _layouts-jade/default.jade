@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+  | {% include head.html %}
+  body
+    | {% include header.html %}
+    div.page-content
+      div.wrapper
+        | {{ content }}
+    | {% include footer.html %}
