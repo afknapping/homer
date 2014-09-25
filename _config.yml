@@ -21,5 +21,10 @@ sass:
 # feature switches
 header: false
 footer: false
+
 post_listing: false
 data_example: false
+
+web_components: false
+elements:
+  - my-element

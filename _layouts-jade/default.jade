@@ -5,6 +5,7 @@ html(lang="en")
     | {% if site.header %} {% include header.html %} {% endif %}
     | {% if site.post_listing %} {% include post_listing.html %} {% endif %}
     | {% if site.data_example %} {% include data_example.html %} {% endif %}
+    | {% if site.web_components %} {% include web_components.html %} {% endif %}
     div.page-content
       div.wrapper
         | {{ content }}
