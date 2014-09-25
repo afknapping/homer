@@ -1,0 +1,43 @@
+hr
+h1.page-heading
+  | Posts
+
+hr
+ul.post-list
+  | {% for post in site.posts %}
+  li
+    span.post-meta {{ post.date | date: "%b %-d, %Y" }}
+    h2
+      a.post-link(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+  | {% endfor %}
+p.rss-subscribe
+  | subscribe
+  a(href="{{ '/feed.xml' | prepend: site.baseurl }}")
+    | via RSS
+
+hr
+
+.home
+  // major posts
+  ul.posts
+    h2 Keypoints
+    | {% for post in site.posts %}
+    | {% if post.layout == "article" or post.layout == "picture" %}
+    li
+      span.post-date {{ post.date | date: "%b %-d, %Y" }}
+      a.post-link(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+    | {% endif%}
+    | {% endfor %}
+  hr
+  // minor posts
+  ul.posts
+    h2 Bits and pieces
+    | {% for post in site.posts %}
+    | {% if post.layout == "sketch" or post.layout == "link" or post.layout == "snapshot" or post.layout == "quote" or post.layout == "note" %}
+    li
+      span.post-date {{ post.date | date: "%b %-d, %Y" }}
+      a.post-link(href='{{ post.url | prepend: site.baseurl }}') {{ post.title }}
+      | {{ post.quote_author }}
+    | {% endif%}
+    | {% endfor %}
+  hr

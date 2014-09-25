@@ -1,0 +1,17 @@
+.datatest
+  h2 datatest
+  ul
+    | {% for session_hash in site.data.sessions %}
+    | {% assign session = session_hash[1] %}
+
+    li
+      p {{ session.title }}
+      p {{ session.abstract }}
+      p {{ session.speaker_name }}
+      p {{ session.speaker_link_url }}
+      p
+        img(src="{{ session.speaker_pic_url }}")
+      p {{ session.speaker_twitter_handle }}
+      p {{ session.speaker_github_handle }}
+      p {{ session.speaker_short_bio }}
+      | {% endfor %}

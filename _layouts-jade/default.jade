@@ -2,8 +2,10 @@ doctype html
 html(lang="en")
   | {% include head.html %}
   body
-    | {% include header.html %}
+    | {% if site.header %} {% include header.html %} {% endif %}
+    | {% if site.post_listing %} {% include post_listing.html %} {% endif %}
+    | {% if site.data_example %} {% include data_example.html %} {% endif %}
     div.page-content
       div.wrapper
         | {{ content }}
-    | {% include footer.html %}
+    | {% if site.footer %} {% include footer.html %} {% endif %}

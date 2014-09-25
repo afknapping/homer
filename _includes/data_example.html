@@ -1,0 +1,2 @@
+<div class="datatest"><h2>datatest</h2><ul>{% for session_hash in site.data.sessions %}
+{% assign session = session_hash[1] %}<li><p>{{ session.title }}</p><p>{{ session.abstract }}</p><p>{{ session.speaker_name }}</p><p>{{ session.speaker_link_url }}</p><p><img src="{{ session.speaker_pic_url }}"/></p><p>{{ session.speaker_twitter_handle }}</p><p>{{ session.speaker_github_handle }}</p><p>{{ session.speaker_short_bio }}</p>{% endfor %}</li></ul></div>
