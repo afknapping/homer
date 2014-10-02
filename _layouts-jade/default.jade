@@ -2,11 +2,15 @@ doctype html
 html(lang="en")
   | {% include head.html %}
   body
-    | {% if site.header %} {% include header.html %} {% endif %}
-    | {% if site.post_listing %} {% include post_listing.html %} {% endif %}
-    | {% if site.data_example %} {% include data_example.html %} {% endif %}
-    | {% if site.web_components %} {% include web_components.html %} {% endif %}
     div.page-content
       div.wrapper
+
         | {{ content }}
+        
+        | {% if site.header %} {% include header.html %} {% endif %}
+        | {% if site.post_listing %} {% include post_listing.html %} {% endif %}
+        | {% if site.data_example %} {% include data_example.html %} {% endif %}
+        | {% if site.raphaeljs %} {% include raphael.html %} {% endif %}
+        | {% if site.web_components %} {% include web_components.html %} {% endif %}
+
     | {% if site.footer %} {% include footer.html %} {% endif %}

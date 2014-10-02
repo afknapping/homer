@@ -25,6 +25,9 @@ footer: false
 post_listing: false
 data_example: false
 
+raphaeljs: true
+
 web_components: false
 elements:
   - my-element
+  - raphael-01

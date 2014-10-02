@@ -59,7 +59,7 @@ gulp.task("jade_includes", function(event) {
 gulp.task("watch", function() {
   gulp.watch(sources.jade_index, ["jade_index"]);
   gulp.watch(sources.jade_layouts, ["jade_layouts"]);
-  gulp.watch(sources.jade_includes, ["jade_includes "]);
+  gulp.watch(sources.jade_includes, ["jade_includes"]);
   gulp.watch(sources.sass, ["sass"]);
   // gulp.watch(sources.coffee, ["coffee"]);
   // gulp.watch(sources.overwatch, refresh);

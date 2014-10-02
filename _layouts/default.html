@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en">{% include head.html %}<body>{% if site.header %} {% include header.html %} {% endif %}
+<!DOCTYPE html><html lang="en">{% include head.html %}<body><div class="page-content"><div class="wrapper">{{ content }}
+{% if site.header %} {% include header.html %} {% endif %}
 {% if site.post_listing %} {% include post_listing.html %} {% endif %}
 {% if site.data_example %} {% include data_example.html %} {% endif %}
-{% if site.web_components %} {% include web_components.html %} {% endif %}<div class="page-content"><div class="wrapper">{{ content }}</div></div>{% if site.footer %} {% include footer.html %} {% endif %}</body></html>
+{% if site.raphaeljs %} {% include raphael.html %} {% endif %}
+{% if site.web_components %} {% include web_components.html %} {% endif %}</div></div>{% if site.footer %} {% include footer.html %} {% endif %}</body></html>
